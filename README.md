@@ -27,6 +27,30 @@
    * [OPT-7. C# Mail](#opt-7-C#-mail)
    * [OPT-8. WebSocket](#opt-8-websocket)
 
+## Fundamentals
+
+C# is a object-oriented and type-safe programming language. C# enables developers to build many types of applications that run in .NET.
+
+C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard.
+
+What is .NET ?
+.NET is a free, open-source development platform for building many kinds of apps, such as:
+
+- Web apps, web APIs, and microservices
+- Serverless functions in the cloud
+- Cloud native apps
+- Mobile apps
+- Desktop apps
+- Windows WPF
+- Windows Forms
+- Universal Windows Platform (UWP)
+- Games
+- Internet of Things (IoT)
+- Machine learning
+- Console apps
+- Windows services
+
+
 ## Working Mode
 
 The road-map consists of several steps. In each step, a set of theoretical concepts are explored, supported by reference documentation, book chapters, tutorials and videos. In parallel, a simple application will be built with the learned concepts: the *Online Shop* application.
