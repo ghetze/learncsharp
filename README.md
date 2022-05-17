@@ -7,7 +7,7 @@
  - [Time Bookings](#time-bookings)
  - [Online Shop](#online-shop)
  - [Chapters](#chapters)
-   * [0. Java, Git, Maven](#0-java-git-maven)
+   * [0. C#, Git, Nuget](#0-C#-git-Nuget)
    * [1. Spring Basics](#1-spring-basics)
    * [2. Spring Boot](#2-spring-boot)
    * [3. JPA and Flyway](#3-jpa-and-flyway)
@@ -23,7 +23,7 @@
    * [OPT-4. Olingo](#opt-4-olingo)
    * [OPT-5. MVC with Thymeleaf](#opt-5-mvc-with-thymeleaf)
    * [OPT-6. RabbitMQ](#opt-6-rabbitmq)
-   * [OPT-7. Java Mail](#opt-7-java-mail)
+   * [OPT-7. C# Mail](#opt-7-C#-mail)
    * [OPT-8. WebSocket](#opt-8-websocket)
 
 ## Working Mode
@@ -48,9 +48,8 @@ Use the following booking codes to track activities:
 
 | Booking Code                            | Activity                                                                                                          |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Schul. & Einarb. JAVA - allg. Einarb.   | Going through the learning material; tutorials; doing own theoretical investigations; attending presentations.    |
-| Schul. & Einarb. JAVA - Impl.-Phase     | Online shop implementation.                                                                                       |
-| Schul. & Einarb. JAVA - Komm und JF     | Regular calls, internal discussions (on-boarding, off-boarding).                                                  |
+| Schul. & Einarb. C#  - allg. Einarb.    | Going through the learning material; tutorials; doing own theoretical investigations; attending presentations.    |
+|  
 
 In the booking description, please use the following format: `Chapter: Brief activity description`, for the regular calls, simply state the name of the meeting. 
 
@@ -68,16 +67,16 @@ Throughout the application, we assume that prices are always in EUR and weights 
 
 ## Chapters
 
-### 0. Java, Git, Maven
+### 0. C#, Git
 
-Goal: Getting familiar with the ecosystem around Spring. You can skip this chapter if you have already worked with Java, Git and Maven before.
+Goal: Getting familiar with the ecosystem around c#. You can skip this chapter if you have already worked with C# and Git.
 
 Required Reading:
 
  - [Git Basics](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics)
- - [Maven Intro](https://maven.apache.org/what-is-maven.html)
- - [Java 8](https://www.tutorialspoint.com/java8/index.htm)
- - [EditorConfig](https://editorconfig.org/)
+ - [C# (c sharp)](https://www.tutorialspoint.com/csharp/index.htm)
+ - [Intro to Visual Studio in 5 minutes](https://www.youtube.com/watch?v=5AOp8zFu4Vg&ab_channel=dotNET)
+ - [Visual Studio 2022 Tips & Tricks](https://www.youtube.com/watch?v=etHfCFwH6MY&ab_channel=ClaudioBernasconi)
 
 Online Shop: *nothing to do*.
 
@@ -85,8 +84,8 @@ Further Resources:
 
  - [GitHub - Hello World](https://guides.github.com/activities/hello-world/)
  - [Git - CLI Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
- - [Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
- - [Guide to Java Reflection](https://www.baeldung.com/java-reflection)
+ - [Nuget in 5 minutes](https://Nuget.apache.org/guides/getting-started/Nuget-in-five-minutes.html)
+ - [Guide to C# Reflection](https://www.baeldung.com/C#-reflection)
 
 ### 1. Spring Basics
 
@@ -117,7 +116,7 @@ Required Reading:
  - [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
  - [Configuration Properties](https://www.baeldung.com/configuration-properties-in-spring-boot)
  - [Introduction to Lombok](https://www.baeldung.com/intro-to-project-lombok)
- - [Introduction to H2 Database](http://www.topjavatutorial.com/misc/introduction-to-h2-database/)
+ - [Introduction to H2 Database](http://www.topC#tutorial.com/misc/introduction-to-h2-database/)
 
 Online Shop:
  
@@ -128,7 +127,7 @@ Online Shop:
  > - Artifact: `shop`,
  > - Dependencies: `Web`, `Security`, `JPA`, `Flyway`, `H2`, `Lombok`.
  >
- > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Maven in the IDE anyway.
+ > Extract the generated `zip` file into the previously cloned repository. Import this project into your IDE. You can delete the `mvnw`, `mvnw.cmd` and `.mvn` files / folders as you have Nuget in the IDE anyway.
  >
  > Enable the [H2 console for your application](https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/html/boot-features-sql.html#boot-features-sql-h2-console) and configure H2 to use a [file-based storage somewhere on your computer](https://stackoverflow.com/questions/37903105/how-to-configure-spring-boot-to-use-file-based-h2-database/37969181#37969181).
 
@@ -140,12 +139,12 @@ Further Resources:
 
 ### 3. JPA and Flyway
 
-Goal: Initialize the database schema and map the tables to Java classes using JPA.
+Goal: Initialize the database schema and map the tables to C# classes using JPA.
 
 Required Reading:
 
  - [Database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
- - [JPA - Entities](https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html)
+ - [JPA - Entities](https://docs.oracle.com/C#ee/5/tutorial/doc/bnbqa.html)
  - [JPA - JPQL](https://www.tutorialspoint.com/jpa/jpa_jpql.htm)
  - [Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
 
@@ -153,7 +152,7 @@ Online Shop:
  
  > Create a data model for your application in a Flyway SQL migration. You can refine the model by adding unique indexes (e.g. supplier name) and introducing artificial PKs instead of composite ones and also add a unique index.
  >
- > Translate this data model into Java entity classes. Use Lombok to annotate these classes with `@Data` annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically later on.*
+ > Translate this data model into C# entity classes. Use Lombok to annotate these classes with `@Data` annotations to generate getters, setters, equals and hashCode. Hint: *it might be useful to create a base entity class (containing just the primary key) or an interface (containing the primary key getter and setter) to be able to handle entities generically later on.*
  > 
  > Annotate all the entities with the proper JPA annotations (`@Entity`, `@OneToMany`, etc). Write Spring Data JPA repositories to allow easy access to your entities. 
 
@@ -182,7 +181,7 @@ Online Shop:
  >
  > Create a service class that handles the creation of orders. The following constraints apply:
  >
- > - You get a single java object as input. This object will contain the order timestamp, the delivery address and a list of products (product ID and quantity) contained in the order.
+ > - You get a single C# object as input. This object will contain the order timestamp, the delivery address and a list of products (product ID and quantity) contained in the order.
  > - You return an Order entity if the operation was successful. If not, you throw an exception.
  > - The service has to select a strategy for finding from which locations should the products be taken. The strategy should be selected based on a `@Configuration`. The following initial strategies should be created: 
  >   - **Single location** - find a single location that has all the required products (with the required quantities) in stock. If there are more such locations, simply take the first one based on the ID.
@@ -318,7 +317,7 @@ Online Shop:
 
 Further Resources:
 
- - [Spring REST Client Example](https://howtodoinjava.com/spring-restful/spring-restful-client-resttemplate-example/)
+ - [Spring REST Client Example](https://howtodoinC#.com/spring-restful/spring-restful-client-resttemplate-example/)
  - [Spring in Action](https://1drv.ms/b/s!AiBPL7npTofshY5PJim4M5RiiOyu7w) - Part 2, Chapter 7.1
 
 ### 9. Task Scheduler
@@ -465,7 +464,7 @@ Further Resources:
  - [Spring AMQP Reference](https://docs.spring.io/spring-amqp/docs/2.1.5.RELEASE/reference/)
  - [An Introduction to Message Brokers](https://medium.com/@xaviergeerinck/an-introduction-to-message-brokers-9bd203b4ebbd)
 
-### OPT-7. Java Mail
+### OPT-7. C# Mail
 
 Goal: Send confirmation emails to customers when orders are created.
 
@@ -484,7 +483,7 @@ Online Shop:
 
 Further Resources:
 
- - [Sending Emails with Java](https://www.baeldung.com/java-email)
+ - [Sending Emails with C#](https://www.baeldung.com/C#-email)
  - [Spring Email Reference](https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/integration.html#mail)
 
 ### OPT-8. WebSocket
