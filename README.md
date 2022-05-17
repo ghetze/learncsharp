@@ -2,7 +2,8 @@
 
 ## Contents
 
- - [Working Mode](#working-mode)
+ - [Fundamentals]\(#fundamentals)
+ - [Working Mode]\(#working-mode)
  - [Environment](#environment)
  - [Time Bookings](#time-bookings)
  - [Online Shop](#online-shop)
